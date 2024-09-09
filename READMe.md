@@ -1,0 +1,9 @@
+## Portfolio ##
+***Laboratory Exercise 1***
+- - - -
+- Design Choices: 
+    > ...
+- Challenges faced:
+    > ...
+- How they were resolved:
+    > ...
