@@ -9,10 +9,19 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 2rem;
+
+    margin: 0;
 }
 /* temporary border styling to see element boundaries */
 section {
-    border: 3px black solid;
+    border: 3px blue solid;
+}
+
+
+/* HEADER */
+header {
+    background-color: rgba(255, 255, 255, 0.333);
+    backdrop-filter: blur(0.15rem);
 }
 
 /* ---------------section designs----------------*/
@@ -22,22 +31,24 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    padding: 1rem;
-    margin: 2rem;
+    padding: 4rem;
 }
-.left-home {
+
+.left-home, .right-home {
     display: flex;
-    flex: 3;
+    flex: 2;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
 }
-
-.right-home {
+.mid-home {
     display: flex;
-    flex: 2;
+    flex: 3;
     flex-wrap: wrap;
     gap: 1rem;
+}
+.right-home {
+    flex: 1;
 }
 
 /* ---------------div designs----------------*/
@@ -48,8 +59,8 @@ section {
     box-shadow: 
         0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.308), 
         inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.482), 
-        inset 4rem 4rem 9rem 0px rgba(55, 190, 220, 0.193),
-        inset 14rem 15rem 17rem 0px rgba(208, 18, 18, 0.126);
+        inset 4rem 4rem 9rem 0px rgba(55, 190, 220, 0.164),
+        inset 14rem 15rem 17rem 0px rgba(180, 25, 25, 0.112);
     padding: 1rem;
 }
 
@@ -66,8 +77,9 @@ section {
 }
 
 /* home section tiles */
+
 #title-tile {
-    flex: 1 1 10rem;
+    flex: 1 1 2rem;
     font-weight: 800;
 }
 #aboutme-tile {
@@ -77,11 +89,34 @@ section {
 }
 
 #portf-tile {
-    flex: 1 1 3rem;
+    flex: 1 1 8rem;
 }
 
 #contact-tile {
     flex: 1 1 1rem;
 }
 
+
+/* FOOTER */
+
+footer {
+    margin-top: 2rem;
+    background-color: rgba(60, 60, 60, 0.225);
+    backdrop-filter: blur(o.15rem);
+
+    display: flex;
+    align-items: end;
+}
+
 /* media queries */
+/* PHONE */
+@media (max-width: 480px) {
+    .home {
+        padding: 1.5rem;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .home {
+        padding: 0.5rem;
+    }
+}
