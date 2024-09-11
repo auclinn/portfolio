@@ -48,8 +48,8 @@ section {
     box-shadow: 
         0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.308), 
         inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.482), 
-        inset 4rem 4rem 9rem 0px rgba(55, 190, 220, 0.362),
-        inset 14rem 15rem 17rem 0px rgba(208, 18, 18, 0.201);
+        inset 4rem 4rem 9rem 0px rgba(55, 190, 220, 0.193),
+        inset 14rem 15rem 17rem 0px rgba(208, 18, 18, 0.126);
     padding: 1rem;
 }
 
@@ -59,9 +59,9 @@ section {
     backdrop-filter: blur(0.15rem);
     box-shadow: 
         0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.308), 
-        inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.614), 
-        inset 4rem 4rem 9rem 0px rgba(219, 236, 249, 0.526),
-        inset 14rem 15rem 17rem 0px rgba(9, 8, 8, 0.201);
+        inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.762), 
+        inset 4rem 4rem 9rem 0px rgba(219, 236, 249, 0.382),
+        inset 14rem 15rem 17rem 0px rgba(9, 8, 8, 0.156);
     padding: 1rem;
 }
 
