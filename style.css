@@ -6,7 +6,6 @@ body {
     background-size: 13rem 13rem; 
 
     font-family: "Handjet", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     font-size: 2rem;
@@ -16,7 +15,9 @@ section {
     border: 3px black solid;
 }
 
-/* section designs */
+/* ---------------section designs----------------*/
+
+/* HOME */
 .home {
     display: flex;
     flex-wrap: wrap;
@@ -24,8 +25,22 @@ section {
     padding: 1rem;
     margin: 2rem;
 }
+.left-home {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
-/* div designs */
+.right-home {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* ---------------div designs----------------*/
 .glasstile {
     border-radius: 2rem;
     background-color: rgba(234, 229, 189, 0.3);
@@ -38,6 +53,18 @@ section {
     padding: 1rem;
 }
 
+.cleartile {
+    border-radius: 2rem;
+    background-color: rgba(234, 229, 189, 0.148);
+    backdrop-filter: blur(0.15rem);
+    box-shadow: 
+        0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.308), 
+        inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.614), 
+        inset 4rem 4rem 9rem 0px rgba(219, 236, 249, 0.526),
+        inset 14rem 15rem 17rem 0px rgba(9, 8, 8, 0.201);
+    padding: 1rem;
+}
+
 /* home section tiles */
 #title-tile {
     flex: 1 1 10rem;
@@ -45,6 +72,8 @@ section {
 }
 #aboutme-tile {
     flex: 1 1 5rem;
+    font-family: "Inter", system-ui;
+    font-size: 1rem;
 }
 
 #portf-tile {
