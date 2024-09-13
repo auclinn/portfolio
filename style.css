@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 /* temporary border styling to see element boundaries */
-section {
+/* section {
     border: 3px blue solid;
 }
 article {
@@ -38,7 +38,7 @@ img {
 }
 div {
     border: 3px violet dotted;
-}
+} */
 
 a {
     color: black;
@@ -169,7 +169,7 @@ header {
 .main { 
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2.5rem 1rem;
     justify-content: center;
     align-content: center;
 }
@@ -185,7 +185,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     position: relative;
     animation: fade 0.7s ease-in;
 }
@@ -356,6 +356,9 @@ footer {
 
 /* TABLET */
 @media (min-width: 768px) and (max-width: 1100px) {
+    .main {
+        padding-top: 4rem;
+    }
     .home {
         padding: 0.5rem;
     }
@@ -364,6 +367,6 @@ footer {
     }
     #landing-content{
         width: 100%;
-        height: 10rem;
+        height: 15rem;
     }
 }
