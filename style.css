@@ -16,15 +16,45 @@ body {
 section {
     border: 3px blue solid;
 }
+article {
+    border: 3px red solid;
+}
+header {
+    border: 3px green solid;
+}
+footer {
+    border: 3px yellow solid;
+}
+
+#mainpic-tile img {
+    border: 3px blue dotted;
+}
 
 
 /* HEADER */
 header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: 1rem;
     background-color: rgba(255, 255, 255, 0.333);
     backdrop-filter: blur(0.15rem);
+    height: 2.5rem;
 }
 
 /* ---------------section designs----------------*/
+
+
+
+/* MAIN */
+.main { 
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-content: center;
+}
 
 /* HOME */
 .home {
@@ -85,6 +115,9 @@ header {
 }
 #mainpic-tile {
     flex: 1 1 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #aboutme-tile {
     flex: 1 1 5rem;
@@ -100,16 +133,19 @@ header {
     flex: 1 1 1rem;
 }
 
+/* home section images */
+#mainpic-tile img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 
 /* FOOTER */
 
 footer {
-    margin-top: 2rem;
+    padding: 2rem;
     background-color: rgba(60, 60, 60, 0.225);
-    backdrop-filter: blur(o.15rem);
-
-    display: flex;
-    align-items: end;
+    backdrop-filter: blur(0.15rem);
 }
 
 /* media queries */
