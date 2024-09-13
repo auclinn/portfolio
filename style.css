@@ -29,11 +29,12 @@ header {
 footer {
     border: 3px yellow solid;
 }
-
-#mainpic-tile img {
+img {
     border: 3px blue dotted;
 }
-
+div {
+    border: 3px violet dotted;
+}
 
 /* HEADER */
 header {
@@ -48,6 +49,22 @@ header {
     height: 2rem;
 }
 
+.header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: 800;
+}
+
+.header-sub {
+    font-family: "Noto Sans Tagalog", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 /* ---------------div designs----------------*/
 .glasstile {
     border-radius: 2rem;
@@ -55,7 +72,7 @@ header {
     backdrop-filter: blur(0.15rem);
     box-shadow: 
         0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.308), 
-        inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.482), 
+        inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.775), 
         inset 4rem 4rem 9rem 0px rgba(55, 190, 220, 0.164),
         inset 14rem 15rem 17rem 0px rgba(180, 25, 25, 0.112);
     padding: 1rem;
@@ -86,17 +103,48 @@ header {
     justify-content: center;
     align-content: center;
 }
+
 /* LANDING */
+.landing {
+    display: flex;
+    padding: 4rem 4rem 1rem 4rem;
+}
+
 #landing-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 20rem;
+    position: relative;
+}
+
+.landing-title {
+    flex: 2;
+    text-align: center;
+    font-weight: 700;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-img img {
+    max-width: 40%;
+    max-height: 120%;
+    position: absolute;
+    right: 4rem;
+    bottom: 0.05rem;
 }
 
 /* HOME */
-.landing {
-    display: flex;
-    padding: 2rem 4rem 1rem 4rem;
-}
 
 .home {
     display: flex;
@@ -150,7 +198,6 @@ header {
     flex: 1 1 1rem;
 }
 
-/* home section images */
 #mainpic-tile img, #contact-tile img{
     width: 100%;
     height: auto;
@@ -175,6 +222,16 @@ footer {
     .landing {
         padding: 2rem 1.5rem 1rem 1.5rem;
     }
+    #landing-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .landing-img img {
+        right: 50;
+    }
+    .landing-title {
+        font-size: 2.5rem;
+    }
 }
 @media (min-width: 481px) and (max-width: 767px) {
     .home {
@@ -182,5 +239,29 @@ footer {
     }
     .landing {
         padding: 2rem 0.5rem 1rem 0.5rem;
+    }
+    #landing-content{
+        display: flex;
+    }
+    .landing-title {
+        font-size: 3.5rem;
+    }
+    .landing-img img {
+        right: 0.1rem;
+    }
+}
+
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1100px) {
+    .home {
+        padding: 0.5rem;
+    }
+    .landing {
+        padding: 2rem 1rem 1rem 0.5rem;
+    }
+    #landing-content{
+        width: 100%;
+        height: 10rem;
     }
 }
