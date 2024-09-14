@@ -282,6 +282,7 @@ header {
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 .right-home {
     flex: 1;
 }
@@ -440,6 +441,11 @@ footer {
     .landing-img {
         right: 30%;
     }
+
+    .portf-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 
@@ -462,6 +468,11 @@ footer {
     }
     .landing-img {
         right: -1rem;
+    }
+
+    .portf-content {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
