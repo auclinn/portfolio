@@ -327,6 +327,19 @@ header {
     justify-content: space-around;
 }
 
+.code-portf, .art-portf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-portf img, .art-portf img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
 .portf-link {
     display: flex;
     justify-content: center;
@@ -402,6 +415,11 @@ footer {
 
     .down {
         padding: 0.5rem 3rem 3rem 3rem;
+    }
+
+    .portf-content {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 @media (min-width: 481px) and (max-width: 767px) {
