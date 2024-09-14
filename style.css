@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 /* temporary border styling to see element boundaries */
-/* section {
+section {
     border: 3px blue solid;
 }
 article {
@@ -38,11 +38,12 @@ img {
 }
 div {
     border: 3px violet dotted;
-} */
+}
 
 a {
     color: black;
 }
+
 /* HEADER */
 header {
     display: flex;
@@ -128,6 +129,13 @@ header {
         background-image: linear-gradient(-45deg, red, transparent, transparent);
     }
 }
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
 
 
 /* ---------------div designs----------------*/
@@ -182,7 +190,8 @@ header {
 
 #landing-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 2rem;
     align-items: center;
     width: 100%;
     height: 25rem;
@@ -191,13 +200,24 @@ header {
 }
 
 .landing-title {
-    flex: 2;
+    flex: 1;
     text-align: center;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.landing-txt {
+    border-right: 0.25rem black solid;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(20),
+        cursor 0.4s step-end infinite alternate;
 }
 
 .landing-img-container {
@@ -370,10 +390,19 @@ footer {
         padding: 2rem 1rem 1rem 0.5rem;
     }
     #landing-content{
-        width: 100%;
         height: 15rem;
     }
     .landing-img {
         right: -1rem;
+    }
+}
+
+/* OTHER LAPTOP */
+@media (min-width: 1024px) and (max-width: 1344px) {
+    .landing-img {
+        right: -1rem;
+    }
+    #landing-content{
+        height: 15rem;
     }
 }
