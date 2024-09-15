@@ -40,6 +40,10 @@ div {
     border: 3px violet dotted;
 } */
 
+
+/* ============================
+            GENERAL
+=============================== */
 a {
     color: black;
     /* text-decoration: none; */
@@ -54,7 +58,9 @@ h5 {
     margin: 1rem;
 }
 
-/* HEADER */
+/* ============================
+            HEADER/NAV
+=============================== */
 header {
     display: flex;
     justify-content: space-between;
@@ -88,7 +94,9 @@ header {
     font-size: 1.5rem;
 }
 
-/* ---------------animations--------------- */
+/* ============================
+            ANIMATIONS
+=============================== */
 @keyframes fade {
     0% {
         opacity: 0;
@@ -139,7 +147,9 @@ header {
 }
 
 
-/* ---------------div designs----------------*/
+/* ============================
+        GENERAL DIV DESIGNS
+=============================== */
 .glasstile {
     border-radius: 2rem;
     background-color: rgba(234, 229, 189, 0.3);
@@ -153,14 +163,7 @@ header {
     transition: 0.5s ease;
 }
 
-#aboutme-tile:hover, #portf-tile:hover, #contact-tile:hover {
-    box-shadow: 
-        0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.655), 
-        inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.775), 
-        inset 4rem 4rem 9rem 0px rgba(55, 190, 220, 0.164),
-        inset 14rem 15rem 17rem 0px rgba(180, 25, 25, 0.112);
-    transform: translateY(-0.15rem);
-}
+
 
 .cleartile {
     border-radius: 2rem;
@@ -174,12 +177,13 @@ header {
     padding: 1rem;
 }
 
+/* ============================
+            INDEX
+=============================== */
 
 /* ---------------section designs----------------*/
 
-
-
-/* MAIN */
+/* MAIN (article) */
 .main { 
     display: flex;
     flex-direction: column;
@@ -251,7 +255,7 @@ header {
     text-decoration: none;
 }
 
-/* HOME */
+/* HOME divisions*/
 
 .home {
     display: flex;
@@ -313,6 +317,15 @@ header {
     justify-content: space-evenly;
     align-items: center;
     animation: fromleft 0.9s ease-in-out;
+}
+
+#aboutme-tile:hover, #portf-tile:hover, #contact-tile:hover {
+    box-shadow: 
+        0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.655), 
+        inset 0.2rem 0.2rem 0.1rem 0 rgba(255, 255, 255, 0.775), 
+        inset 4rem 4rem 9rem 0px rgba(55, 190, 220, 0.164),
+        inset 14rem 15rem 17rem 0px rgba(180, 25, 25, 0.112);
+    transform: translateY(-0.15rem);
 }
 
 #portf-tile {
@@ -393,7 +406,48 @@ header {
     transition: 0.5s
 }
 
-/* FOOTER */
+/* ============================
+            PORTFOLIO 
+=============================== */
+#portf-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    animation: fade 0.7s ease-in;
+}
+
+.code-projs, .art-projs {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.code-thumbnail, .art-thumbnail {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border: white solid 0.1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.code-thumbnail img, .art-thumbnail img {
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+
+/* ============================
+            FOOTER
+=============================== */
 
 footer {
     padding: 2rem;
@@ -406,7 +460,9 @@ footer {
     font-size: 1.5rem;
 }
 
-/* media queries */
+/* ============================
+        MEDIA QUERIES
+=============================== */
 /* PHONE */
 @media (max-width: 480px) {
     .home {
