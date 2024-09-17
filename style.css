@@ -48,7 +48,7 @@ div {
 =============================== */
 a {
     color: black;
-    /* text-decoration: none; */
+    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -509,6 +509,7 @@ header {
 
 .proj-link {
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 .proj-link a {
@@ -520,7 +521,7 @@ header {
     border-radius: 0.9rem;
     color: white;
     text-decoration: none;
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0.2rem;
 }
 
 .code-thumbnail:hover, .art-thumbnail:hover {
