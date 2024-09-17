@@ -552,6 +552,12 @@ header {
     gap: 2rem;
 }
 
+.aboutme-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .aboutme-desc p {
     margin: 0.5rem;
 }
@@ -565,9 +571,10 @@ header {
     justify-content: center;
 }
 .aboutme-img-container img {
-    width: 20%;
+    width: 60%;
     height: auto;
-    object-fit: contain;
+    border-radius: 1rem;
+    object-fit: cover;
 }
 
 /* ============================
@@ -687,7 +694,7 @@ footer {
     }
 
     .aboutme-img-container img {
-        width: 65%;
+        width: 50%;
     }
 }
 
