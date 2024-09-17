@@ -378,6 +378,10 @@ header {
     font-size: 1.8rem;
 }
 
+.aboutme-link a, .portf-link a {
+    color: rgb(139, 99, 55);
+}
+
 .aboutme-link a:hover, .portf-link a:hover {
     background-color: rgb(139, 99, 55);
     padding: 0.3rem;
@@ -563,7 +567,9 @@ header {
 }
 
 .sub-desc p {
-    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .aboutme-img-container {
@@ -575,6 +581,27 @@ header {
     height: auto;
     border-radius: 1rem;
     object-fit: cover;
+}
+
+#contact-list {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+#contact-list a {
+    background-color: rgba(139, 98, 55, 0.111);
+    border-radius: 0.3rem;
+}
+
+#contact-list a:hover {
+    background-color: rgba(139, 98, 55, 0.648);
+    border-radius: 0.9rem;
+    color: white;
+    padding: 0 0.3rem;
 }
 
 /* ============================
@@ -646,7 +673,7 @@ footer {
     }
 
     .sub-desc p {
-        font-size: 0.95rem;
+        font-size: 0.7rem;
     }
 
     .aboutme-img-container {
@@ -655,6 +682,14 @@ footer {
 
     .aboutme-img-container img {
         width: 65%;
+    }
+
+    #contact-list {
+        flex-direction: column;
+        align-items:center;
+        font-size: 0.7rem;
+        font-weight: 500;
+        padding-top: 1rem;
     }
 }
 @media (min-width: 481px) and (max-width: 767px) {
