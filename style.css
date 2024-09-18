@@ -623,6 +623,19 @@ header {
     align-items: center;
 }
 
+#techs {
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    box-shadow: 0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.308);
+    border-radius: 1rem;
+    width: 85%;
+    padding: 1rem;
+}
+
+#techs i {
+    color: rgb(139, 98, 55);
+}
+
 /* From Uiverse.io by Juanes200122 */ 
 .container {
     position: relative;
@@ -630,7 +643,8 @@ header {
     width: 100%;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
-    box-shadow: 0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.308)
+    box-shadow: 0.5rem 0.3rem 1rem rgba(56, 50, 50, 0.308);
+    border-radius: 1rem;
   }
   
   .container .skill-box {
@@ -703,8 +717,6 @@ header {
     width: 80%;
     animation-delay: 0.3s;
   }
-  
-  
   
   .skill-per .tooltip {
     position: absolute;
@@ -817,6 +829,10 @@ footer {
         font-size: 0.7rem;
         font-weight: 500;
         padding-top: 1rem;
+    }
+
+    .container {
+        max-width: 100%;
     }
 }
 @media (min-width: 481px) and (max-width: 767px) {
