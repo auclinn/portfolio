@@ -1,19 +1,6 @@
 ## Portfolio ##
 ***Laboratory Exercise 1***
 - - - -
-- Design Choices: 
-    > - bento box Style homepage
-    > - overflowing image style (cat)
-- Challenges faced:
-    > - bento style responsiveness
-    > - div overflow
-    > - image reponsiveness
-- How they were resolved:
-    > - use of flex wrap
-    > - modification of values related to img position
-    > - implementation of media queries
-
-
 - Design Choices
 > Bento Box Style Layout:
     - The homepage features a bento-style layout, organizing content into visually appealing and structured sections.
