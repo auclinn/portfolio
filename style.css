@@ -376,6 +376,9 @@ header {
 
 .aboutme-link a, .portf-link a {
     color: rgb(139, 99, 55);
+    background-color: rgba(139, 98, 55, 0.259);
+    border-radius: 1rem;
+    padding:0.5rem;
 }
 
 .aboutme-link a:hover, .portf-link a:hover {
