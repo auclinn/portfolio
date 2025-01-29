@@ -374,14 +374,14 @@ header {
     font-size: 1.8rem;
 }
 
-.aboutme-link a, .portf-link a {
+.aboutme-link a, .portf-link a, .general-desc a {
     color: rgb(139, 99, 55);
     background-color: rgba(139, 98, 55, 0.259);
     border-radius: 1rem;
     padding:0.5rem;
 }
 
-.aboutme-link a:hover, .portf-link a:hover {
+.aboutme-link a:hover, .portf-link a:hover, .general-desc a:hover {
     background-color: rgb(139, 99, 55);
     color: white;
     text-decoration: none;
@@ -431,7 +431,7 @@ header {
 #portf-section {
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -453,12 +453,17 @@ header {
     padding: 0 1rem 0 1rem;
 }
 
+.general-desc a {
+    color: rgb(139, 98, 55);
+}
+
 .code-projs, .art-projs {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .code-thumbnail, .art-thumbnail {
