@@ -228,6 +228,7 @@ header {
     text-align: center;
     font-weight: 700;
     font-size: 5rem;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,6 +243,12 @@ header {
     animation: 
         typing 2s steps(20),
         cursor 0.4s step-end infinite alternate;
+}
+
+.landing-subtxt {
+    font-size: 2rem;
+    opacity: 0;
+    animation: fadein 1s 2s cubic-bezier(0.42, 0, 0.19, 0.92);
 }
 
 .landing-img-container {
@@ -514,7 +521,8 @@ header {
 }
 
 .proj-link {
-    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
     text-decoration: none;
 }
 
