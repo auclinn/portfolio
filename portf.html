@@ -23,7 +23,7 @@
     
     <!-- icons -->
     <script src="https://kit.fontawesome.com/6d973851a4.js" crossorigin="anonymous"></script>
-
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -106,22 +106,22 @@
                     <div class="art-thumbnail">
                         <div class="proj-title">Arlecchino</div>
                         <div class="art-container">
-                            <img src="https://pbs.twimg.com/media/GT6wK6Ha0AArtdR?format=jpg&name=4096x4096" alt="">
+                            <img id="arlecchino" class="art-img" src="https://pbs.twimg.com/media/GT6wK6Ha0AArtdR?format=jpg&name=4096x4096" alt="Arlecchino">
                         </div>
                     </div>
                     <div class="art-thumbnail">
                         <div class="proj-title">Furina</div>
                         <div class="art-container">
-                            <img src="https://pbs.twimg.com/media/F4BY0wrbcAAGeVQ?format=jpg&name=4096x4096" alt="">
+                            <img id="furina" class="art-img" src="https://pbs.twimg.com/media/F4BY0wrbcAAGeVQ?format=jpg&name=4096x4096" alt="Furina">
                         </div>    
                     </div>
                     <div class="art-thumbnail">
                         <div class="proj-title">Yae Miko</div>
                         <div class="art-container">
-                            <img src="https://pbs.twimg.com/media/FEDdZ6oUUAIyeGt?format=jpg&name=4096x4096" alt="">
+                            <img id="yaemiko" class="art-img" src="https://pbs.twimg.com/media/FEDdZ6oUUAIyeGt?format=jpg&name=4096x4096" alt="Yae Miko">
                         </div>
                     </div>
-                </div>
+                </div>  
                 <div class="general-desc">
                     See more on
                     <a href="https://twitter.com/ellioranthe/media" target="_blank" rel="noopener noreferrer">Twitter / X</a>
@@ -133,6 +133,23 @@
             </div>
         </section>
     </article>
+
+    <!-- art modals -->
+    <div id="art1-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="art1-img">
+        <div id="art1-caption" class="caption"></div>
+     </div>
+    <div id="art2-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="art2-img">
+        <div id="art2-caption" class="caption"></div>
+    </div>
+    <div id="art3-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="art3-img">
+        <div id="art3-caption" class="caption"></div>
+    </div>
     
     <footer>
         &copy; Bernadette A. || Auclinn || Ellioranthe
