@@ -11,15 +11,12 @@ let modal3 = document.getElementById("art3-modal");
 let img3 = document.getElementById("yaemiko");
 let modalImg3 = document.getElementById("art3-img");
 
-let captionText = document.getElementById("caption");
-
 
 function setupModal(img, modal, modalImg) {
     img.addEventListener("click", function() {
         console.log("click");
         modal.style.display = "block";
         modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
     });
 }
 
